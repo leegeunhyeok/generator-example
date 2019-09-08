@@ -21,7 +21,7 @@
         top: 50%;
         left: 50%;
         width: 300px;
-        height: 300px;
+        height: 350px;
         padding: 10px;
         background-color: #000;
         border-radius: 4px;
@@ -31,13 +31,31 @@
       #wrap canvas {
         width: 280px;
         height: 280px;
+        margin-bottom: 10px;
+        background-color: #fff;
+      }
+
+      #wrap .control {
+        text-align: center;
+        height: 30px;
       }
 
     </style>
   </head>
   <body>
     <div id="wrap">
-      <canvas id="canvas"></canvas>
+      <canvas id="canvas" width="280" height="280"></canvas>
+      <div class="control">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="feed_1">Feed 1</button>
+        <button id="feed_2">Feed 2</button>
+      </div>
     </div>
+    <script src="coroutine.js"></script>
+    <script src="Animatable.js"></script>
+    <script src="Sprite.js"></script>
+    <script src="App.js"></script>
+    <script src="index.js" defer></script>
   </body>
 </html>
